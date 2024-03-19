@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--  Метаданные: кодировка, краткое описание  -->
+    <meta charset="UTF-8">
+    <meta name="description"
+          content="Дерево Фенвика">
+
+    <!--  Автор  -->
+    <meta name="author" content="Пронин Вадим">
+    <link rel="me" href="https://github.com/DzeinX" type="text/html">
+    <link rel="me" href="mailto:ProVad2017@yandex.ru">
+
+    <!--  Осмотр страницы браузерами  -->
+    <meta name="robots" content="index,follow">
+
+    <!--  Право собствеености сайта  -->
+    <meta name="google-site-verification" content="verification_token"><!-- Google Search Console -->
+    <meta name="yandex-verification" content="verification_token"><!-- Яндекс Вебмастерам -->
+    <meta name="msvalidate.01" content="verification_token"><!-- Bing Webmaster Center -->
+    <meta name="alexaVerifyID" content="verification_token"><!-- Alexa Console -->
+    <meta name="p:domain_verify" content="code_from_pinterest"><!-- Pinterest Console-->
+    <meta name="norton-safeweb-site-verification" content="norton_code"><!-- Norton Safe Web -->
+
+    <!--  Размер экрана мобильных устройств  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  Подключение стилей  -->
+    <link rel="stylesheet" href="../../../fenvick_tree.css">
+    <link rel="stylesheet" href="../../../primitives/web/ArrayComponent/ArrayComponent.css">
+    <link rel="stylesheet" href="../../../primitives/web/DescriptionComponent/DescriptionComponent.css">
+
+    <!--  Подключение иконки  -->
+    <link rel="shortcut icon" href="../../../icon.png" sizes="192x192" type="image/x-icon">
+    <link rel="apple-touch-icon" href="#">
+    <link rel="mask-icon" href="#" color="blue">
+
+    <!--  Название страницы  -->
+    <title>Дерево Фенвика</title>
+</head>
+<body>
+<header id="tabs">
+    <div class="header-box">
+        <div class="left">
+            <div class="name">Дерево Фенвика</div>
+        </div>
+
+        <div class="right">
+            <div class="tabs">
+                <div class="tab" data-tab-name="createTree">
+                    Построение дерева
+                </div>
+
+                <div class="tab" data-tab-name="updateTree">
+                    Обновление дерева
+                </div>
+
+                <div class="tab" data-tab-name="getSum">
+                    Сумма элементов
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main id="root"></main>
+
+<footer id="player">
+    <div class="player-box">
+        <div class="play-all">
+            <input type="text" name="seconds-per-step" id="seconds-per-step" class="number" value="500" title="Милисекунд за один шаг">
+            <input type="button" name="play" class="play" title="Проиграть анимацию">
+            <input type="button" name="stop" class="stop" title="Сбросить">
+        </div>
+
+        <div id="action" class="action"></div>
+
+        <div class="play-step">
+            <button name="step-next" class="step-prev" title="Шаг назад"></button>
+            <button name="step-next" class="step-next" title="Шаг вперёд"></button>
+        </div>
+    </div>
+    <div class="input-data" id="input-data"></div>
+</footer>
+</body>
+<script type="module" src="index.js"></script>
+</html>

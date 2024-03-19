@@ -1,0 +1,71 @@
+/* Arrays */
+main#root .array-box {
+    padding: 40px 0 0 0;
+}
+
+main#root .array:hover {
+    cursor: default;
+}
+
+main#root .array-box .array-title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+main#root .array-box .array {
+    display: flex;
+}
+
+main#root .array-box .array .array-element {
+    border: solid #000;
+    border-width: 2px 1px;
+    min-width: 40px;
+    height: 60px;
+
+    text-align: center;
+}
+
+main#root .array-box .array .array-element:last-child {
+    border-right: 2px solid #000;
+}
+
+main#root .array-box .array .array-element:first-child {
+    border-left: 2px solid #000;
+}
+
+main#root .array-box .array .array-element.highlight:last-child {
+    border-right: 2px solid #f39c12;
+}
+
+main#root .array-box .array .array-element.highlight:first-child {
+    border-left: 2px solid #f39c12;
+}
+
+main#root .array-box .array .array-element.highlight {
+    border: solid #f39c12;
+    border-width: 2px 1px;
+    background-color: #ffeaa7;
+}
+
+main#root .array-box .array .array-element .array-element__text {
+    border-bottom: 2px solid #000;
+    line-height: 35px;
+    padding: 0 5px;
+
+    font-weight: 400;
+}
+
+main#root .array-box .array .array-element.highlight .array-element__text {
+    border-bottom: 2px solid #f39c12;
+    color: #f39c12;
+}
+
+main#root .array-box .array .array-element .array-element__index {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+main#root .array-box .array .array-element.highlight .array-element__index {
+    color: #f39c12;
+}
